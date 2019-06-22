@@ -1,33 +1,339 @@
-.App {
-  text-align: center;
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  background-size: cover;
+  font-family: 'Play', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.photo {
+  background-image:url("./components/images/me.jpg");
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar {
+  background-image:url("./components/images/code.jpg");
+  overflow:auto;
+  position:fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  font-family: 'Play', sans-serif;
+}
+
+.container-width{
+  width:90%;
+  max-width:1150px;
+  margin:0 auto;
+}
+
+.logo-container{
+  float:left;
+  width:100px;
+}
+.logo{
+  background-image: url("./components/images/logo.png");
+  background-size: cover;
+  border-radius:5px;
+  width:240px;
+  padding:10px;
+  min-height:50px;
+  text-align:center;
+  line-height:30px;
+  color:white;
+  font-size:23px;
+  cursor: pointer;
+}
+.logo:hover {
+  filter: invert(100%); 
+}
+
+.menu{
+  float:right;
+  width:100%;
+}
+.menu-item{
+  float:right;
+  font-size:15px;
+  color:#eee;
+  width:130px;
+  padding:10px;
+  min-height:10px;
+  text-align:center;
+  line-height:30px;
+  font-weight:400;
+}
+.menu-item:hover{
+    background:white;
+    color:black;
+    cursor:pointer;
+}
+
+.banner{
+  padding-top:100px;
+  padding-bottom:90px;
+  background-image:url("./components/images/back.jpg");
+  background-size: cover;
+  height: auto;
+  min-height: 500px;
+  font-family: 'Play', sans-serif;
+
+}
+.banner-container{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-around;
+  height: auto;
+  
+  
+}
+.banner-content{
+  float:left;
+  padding:7px;
+  width:490px;
+  color:#444;
+  font-weight:100;
+  margin-top:50px;
+  line-height: 2em;
+}
+.banner-title{
+  padding:7px;
+  color:white;
+  font-size:40px;
+}
+.banner-description{
+  padding:7px;
+  font-size:24px;
+  font-weight:400;
+  color:black;
+}
+
+.links-sec{
+  background-color:#fafafa;
+  padding:60px 0;
+  font-family: 'Play', sans-serif;
+}
+.links-title{
+  margin-bottom:15px;
+  font-size:2.5em;
+  text-align:center;
+  font-weight:700;
+  color:#555;
+  padding:5px;
+}
+.links-desc{
+  margin-bottom:55px;
+  font-size:17px;
+  color:rgba(0, 0, 0, 0.5);
+  text-align:center;
+  padding:5px;
+}
+.links{
+  padding:20px 0;
+  display:flex;
+  justify-content:space-evenly;
+  flex-flow:wrap;
+}
+.link{
+  padding-top: 10px;
+  background-color:white;
+  height:300px;
+  width:300px;
+  margin-bottom:30px;
+  box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  border-radius:2px;
+  transition:all 0.5s ease;
+  font-weight:100;
+  overflow:hidden;
+}
+.link:hover{
+  margin-top:-10px;
+  box-shadow:0 20px 30px 0 blue;
+}
+.link-header-1{
+  height:170px;
+  background-image:url("./components/images/GitHub-Mark-120px-plus.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+.link-header-2{
+  height:170px;
+  background-image:url("./components/images/In-Blue-128@2x.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+.link-header-3{
+  height:170px;
+  background-image:url("./components/images/resume.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+.link-body{
+  padding:15px 15px 5px 15px;
+  color:#555;
+}
+.link-title{
+  font-size:1.8em;
+  margin-bottom:5px;
+  padding-top: 10px;
+}
+.link-desc{
+  font-size:1rem;
+  padding-top: 10px;
+  line-height:17px;
+}
+
+.footer-under{
+  transition-delay: 1000ms;
+  background-color:rgb(72, 101, 233);
+  padding-bottom:50px;
+  padding-top:10px;
+  min-height:100px;
+  color:#eee;
+  position:relative;
+  font-weight:100;
+}
+.footer-container{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:stretch;
+  justify-content:space-around;
+}
+.footer-form-container{
+  width:300px;
+  float:right;
+}
+.footer-form-title{
+  color:white;
+  font-weight:400;
+  margin-bottom:10px;
+  padding:0.5em 0;
+  text-align:center;
+  font-size:50px;
+}
+.footer-form-desc{
+  font-size:0.8em;
+  color:white;
+  line-height:20px;
+  text-align:left;
+  margin-bottom:15px;
+}
+
+.sub-input{
+  width:100%;
+  margin-bottom:15px;
+  padding:7px 10px;
+  border-radius:2px;
+  color:white;
+  background-color:#4c5257;
+  border:none;
+  font-family: 'Play', sans-serif;
+}
+.sub-description{
+  width:100%;
+  height: 100px;
+  margin-bottom:15px;
+  padding:7px 10px;
+  border-radius:2px;
+  color:#fff;
+  background-color:#4c5257;
+  border:none;
+  font-family: 'Play', sans-serif;
+}
+
+.sub-btn{
+  width:100%;
+  margin:15px 0;
+  background-color:#17cefc;
+  border:none;
+  color:#fff;
+  border-radius:2px;
+  padding:7px 10px;
+  font-size:1em;
+  cursor:pointer;
+}
+.sub-btn:hover{
+  background-color:#696a9a;
+}
+.sub-btn:active{
+  background-color:#443f5c;
+}
+
+.footer-bottom-bar{
+  background-color:rgba(0, 0, 0, 0.15);
+  color:rgba(238, 238, 238, 0.5);
+  bottom:0;
+  padding:1em 0;
+  position:absolute;
+  width:100%;
+  font-size:0.75em;
+}
+
+
+.background-grad{
+  background: #1a2a6c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+
+.draw {
+  filter: invert(100%);  
+  float:right;
+  padding-top: 6px;
+  display: none;
+}
+
+.sorry {
+  height: auto;     
+  padding-top: 8em;          
+}
+
+.sorry h1 {
+  font-size: 40px;
+  font-family: 'Play', sans-serif;   
+}
+
+.thankyou_message{
+  font-family: 'Play', sans-serif;  
+  font-size: 20px;
+  display: none;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+  .menu-item{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .draw {
+    display: unset;
+  }
+  @media screen and (max-width:310px) {
+    .logo{
+      display: none;
+    }
   }
 }
+
+@media screen and (max-height:700px) {
+  .footer-under{
+    display: none;
+  }
+}
+
