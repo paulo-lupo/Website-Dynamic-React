@@ -11,7 +11,7 @@ export class Projects extends Component {
             { props => (
                 <div style={props}>
             <div>   
-                <section className="banner">
+                <section className="banner-out">
                     <h1 align="center" style={{fontFamily: "'Play', sans-serif"}}>Coming soon! Visit my 
                         <a href='https://github.com/Paulo-Lupo' target="_blank" rel="noopener noreferrer"> GitHub </a> 
                         page for the source code of some of my projects

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Drawer from './Drawer';
+// import Drawer from './Drawer';
 import { Link } from 'react-router-dom';
 import { Spring } from 'react-spring/renderprops'
 
@@ -35,7 +35,7 @@ export class Header extends Component {
                                 </Link>
                                 </a>
                             </div>
-                            <div className='draw'><Drawer className='draw'/></div>
+                            {/* <div className='draw'><Drawer className='draw'/></div> */}
                         </header>
                     </div>
                 </div>

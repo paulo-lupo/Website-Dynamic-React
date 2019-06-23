@@ -87,7 +87,7 @@ export default function SwipeableTemporaryDrawer() {
   return (
     <div>
       <Button onClick={toggleDrawer('right', true)}>
-        <span class="material-icons">view_headline</span>
+        <span class="material-icons">v</span>
       </Button> 
       <SwipeableDrawer
         anchor="right"
