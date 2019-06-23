@@ -49,7 +49,7 @@ export class Links extends Component {
                                     <div class="link-body">
                                         <div class="link-title">Resume
                                         </div>
-                                        <div class="link-desc">One page file that includes my most relevant job experience. 
+                                        <div class="link-desc">One page file that includes my most relevant job experiences. 
                                         </div>
                                     </div>
                                     </div>

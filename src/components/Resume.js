@@ -12,7 +12,7 @@ export class Resume extends Component {
                 <div style={props}>
             <div>   
                 <section class="banner">
-                    <h1 align="center">Coming soon, visit this 
+                    <h1 align="center" style={{fontFamily: "'Play', sans-serif"}}>Coming soon, visit this 
                         <a href='https://paulo-ferreira-resume.s3.amazonaws.com/Paulo-Ferreira-Resume.pdf'> link </a> 
                         for the pdf version
                     </h1>

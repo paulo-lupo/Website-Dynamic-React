@@ -12,15 +12,14 @@ export class Projects extends Component {
                 <div style={props}>
             <div>   
                 <section className="banner">
-                    <h1 align="center">Coming soon, visit my 
+                    <h1 align="center" style={{fontFamily: "'Play', sans-serif"}}>Coming soon! Visit my 
                         <a href='https://github.com/Paulo-Lupo' target="_blank" rel="noopener noreferrer"> GitHub </a> 
-                        page for the source code of some of my projects.
+                        page for the source code of some of my projects
                     </h1>
                 </section>
 
                 </div>
                 </div>
-       
        )
 
 }

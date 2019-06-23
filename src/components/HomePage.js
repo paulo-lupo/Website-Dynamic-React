@@ -24,13 +24,13 @@ export class HomePage extends Component {
                                                 />
 
                                 <div class="banner-content">
-                                    <div class="banner-title">Who am I?
+                                    <div class="banner-title"><strong>Who am I?</strong>
                                     </div>
-                                    <div class="banner-description">My name is Paulo Lupo, and I am from New Jersey.
-                                    I am a 25 years old dedicated software developer who loves solving problems. Currently I am in my Senior year of Computer
-                                    Science at Montclair State University, New Jersey. I am extremely passionate about developing amazing software
-                                    that has a pratical use. Some of my current projects involve using machine learning to solve certain graph theory problems,
-                                    developing a class scheduler, and more! If you have any questions, feel free to contact me.
+                                    <div class="banner-description"><strong>My name is Paulo Ferreira, 
+                                        I am a 25 years old dedicated software developer who loves solving problems. Currently I am in my Senior year of Computer
+                                        Science at Montclair State University, New Jersey. I am extremely passionate about developing amazing software. 
+                                        Some of my current projects involve using machine learning to solve certain graph theory problems,
+                                        developing a class scheduler, and more! If you have any questions, feel free to contact me.</strong>
                                     </div>
                                 </div>
                                 </div>
@@ -76,7 +76,7 @@ export class HomePage extends Component {
                                     <div class="link-body">
                                         <div class="link-title">Resume
                                         </div>
-                                        <div class="link-desc">One page file that includes my most relevant job experience. 
+                                        <div class="link-desc">One page file that includes my most relevant job experiences. 
                                         </div>
                                     </div>
                                     </div>

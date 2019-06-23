@@ -6,9 +6,6 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
-// import { Link } from 'react-mdl';
-
-
 const useStyles = makeStyles({
   list: {
     width: 250,
@@ -46,21 +43,21 @@ export default function SwipeableTemporaryDrawer() {
           <ListItem button >
             <ListItemText primary='Projects'
               onClick={ function() { 
-                window.location.assign("http://localhost:3000/Projects");}
+                window.location.assign("https://paulof.dev/Projects");}
             }/>
           </ListItem>
 
           <ListItem button >
             <ListItemText primary='Links'
               onClick={ function() { 
-                window.location.assign("http://localhost:3000/Links");}
+                window.location.assign("https://paulof.dev/Links");}
             }/>
           </ListItem>
 
           <ListItem button >
             <ListItemText primary='Resume'
               onClick={ function() { 
-                window.location.assign("http://localhost:3000/Resume");}
+                window.location.assign("https://paulof.dev/Resume");}
             }/>
           </ListItem>
       </List>

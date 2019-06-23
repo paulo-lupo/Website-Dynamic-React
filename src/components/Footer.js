@@ -10,7 +10,7 @@ export class Footer extends Component {
                             <div class="footer-form-container">
                                 <div class="footer-form-title">Contact Me
                                 </div>
-                                <div class="footer-form-desc">If you have any questions or suggestions for me, feel free to use the form bellow to contact me. 
+                                <div class="footer-form-desc">If you have any questions or suggestions, feel free to use the form bellow to contact me. 
                                 You may also send me an email directly at jpaulo.lupo@gmail.com.
                                 </div>
 
@@ -118,7 +118,8 @@ export class Footer extends Component {
                                           form.reset();
                                           var formElements = form.querySelector(".form-elements")
                                           if (formElements) {
-                                            formElements.style.display = "none"; // hide form
+                                            formElements.style.display = "none"
+                                            setTimeout(function() {formElements.style.display = "block"}, 1000); // hide form
                                           }
                                           var thankYouMessage = form.querySelector(".thankyou_message");
                                           if (thankYouMessage) {

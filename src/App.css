@@ -77,11 +77,9 @@ a {
 
 .banner{
   padding-top:100px;
-  padding-bottom:90px;
+  padding-bottom:100px;
   background-image:url("./components/images/back.jpg");
   background-size: cover;
-  height: auto;
-  min-height: 500px;
   font-family: 'Play', sans-serif;
 
 }
@@ -91,16 +89,14 @@ a {
   align-items:center;
   justify-content:space-around;
   height: auto;
-  
-  
 }
 .banner-content{
   float:left;
   padding:7px;
   width:490px;
-  color:#444;
+  color: black;
   font-weight:100;
-  margin-top:50px;
+  margin-top:0px;
   line-height: 2em;
 }
 .banner-title{
@@ -110,7 +106,7 @@ a {
 }
 .banner-description{
   padding:7px;
-  font-size:24px;
+  font-size:26px;
   font-weight:400;
   color:black;
 }
@@ -194,7 +190,6 @@ a {
 }
 
 .footer-under{
-  transition-delay: 1000ms;
   background-color:rgb(72, 101, 233);
   padding-bottom:50px;
   padding-top:10px;
@@ -227,6 +222,16 @@ a {
   line-height:20px;
   text-align:left;
   margin-bottom:15px;
+}
+
+.footer-bottom-bar{
+  background-color:rgba(0, 0, 0, 0.15);
+  color:rgba(238, 238, 238, 0.5);
+  bottom:0;
+  padding:1em 0;
+  position:absolute;
+  width:100%;
+  font-size:0.75em;
 }
 
 .sub-input{
@@ -269,26 +274,6 @@ a {
   background-color:#443f5c;
 }
 
-.footer-bottom-bar{
-  background-color:rgba(0, 0, 0, 0.15);
-  color:rgba(238, 238, 238, 0.5);
-  bottom:0;
-  padding:1em 0;
-  position:absolute;
-  width:100%;
-  font-size:0.75em;
-}
-
-
-.background-grad{
-  background: #1a2a6c;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  width: 100%;
-  height: 100%;
-  background-attachment: fixed;
-}
 
 
 .draw {
@@ -314,9 +299,6 @@ a {
   display: none;
 }
 
-
-
-
 @media screen and (max-width: 700px) {
   .menu-item{
     display: none;
@@ -336,4 +318,3 @@ a {
     display: none;
   }
 }
-
